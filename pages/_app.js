@@ -1,12 +1,12 @@
-import "../styles/globals.css";
+import "../styles/globals.scss";
 import Wrapper from "../layouts/wrapper";
 
-function MyApp({ Component, pageProps }) {
+const App = ({ Component, pageProps }) => {
   return (
     <Wrapper>
-      <Component {...pageProps} />
+      <Component {...pageProps}/>
     </Wrapper>
   );
-}
+};
 
-export default MyApp;
+export default App;
